@@ -11,4 +11,4 @@
   make test_local
   ```
 * Tests uses Cheetah to generate report, counts the number of succeeded and failed jobs, compares stdout from each job with the reference, excluding `time(s) = ` line that might be different.
-* Similary, one can substitute `local` by `summit` or other supported supercomputer.
+* Similary, one can substitute `local` by `summit`, `theta` or other supported supercomputer.
