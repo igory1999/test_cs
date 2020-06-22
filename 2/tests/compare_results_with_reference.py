@@ -4,7 +4,7 @@ import sys
 def diff_lines(one, two, ref):
     diff = 0
     for pair in zip(one, two):
-        if(pair[0] != pair[1] and pair[0].find("time(s)") < 0 ):
+        if(pair[0] != pair[1] and pair[0].find("encountered end of stream") < 0 and pair[0].find("size-per-process") < 0):
             print(f"Difference: in {ref}: {pair}")
             diff += 1
     return diff

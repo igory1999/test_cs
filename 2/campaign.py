@@ -46,7 +46,7 @@ class ProducerConsumer(Campaign):
 
     # Setup your environment. Loading modules, setting the LD_LIBRARY_PATH etc.
     # Ensure this script is executable
-    app_config_scripts = {'local': 'setup.sh', 'summit': 'env_setup.sh'}
+    app_config_scripts = {'local': 'setup_local.sh', 'summit': 'setup_summit.sh'}
 
     # PARAMETER SWEEPS
     #-----------------
