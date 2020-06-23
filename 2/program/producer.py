@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/ccs/home/iyakushin/.conda/envs/Test11/bin/python
 
 #
 # Distributed under the OSI-approved Apache License, Version 2.0.  See
@@ -51,6 +51,7 @@ nx = myArray.size
 
 # ADIOS
 adios = adios2.ADIOS("adios2.xml", comm, adios2.DebugON)
+#adios = adios2.ADIOS("adios2.xml", adios2.DebugON)
 
 # IO
 bpIO = adios.DeclareIO("producer")
@@ -61,6 +62,7 @@ bpArray = bpIO.DefineVariable("psi", myArray, [size * nx], [rank * nx], [nx],
 
 # Engine
 bpFileWriter = bpIO.Open("diagnostics.bp", adios2.Mode.Write, MPI.COMM_WORLD)
+#bpFileWriter = bpIO.Open("diagnostics.bp", adios2.Mode.Write)
 
 for t in range(0, 10):
     set_val(myArray, local_arr_size, t, rank)
