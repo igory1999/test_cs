@@ -1,4 +1,6 @@
-#!/ccs/home/iyakushin/.conda/envs/Test11/bin/python
+#!/usr/bin/env python
+
+####!/ccs/home/iyakushin/.conda/envs/Test11/bin/python
 
 #
 # Distributed under the OSI-approved Apache License, Version 2.0.  See
